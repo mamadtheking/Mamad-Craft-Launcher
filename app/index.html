@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mamad Craft Launcher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <aside>
+      <div class="logo">👑 <b>MAMAD</b><span>CRAFT</span></div>
+      <button class="nav active" data-page="home">🏠 Dashboard</button>
+      <button class="nav" data-page="accounts">👤 Accounts</button>
+      <button class="nav" data-page="versions">🧱 Versions</button>
+      <button class="nav" data-page="mods">🧩 Mods</button>
+      <button class="nav" data-page="servers">🌐 Servers</button>
+      <button class="nav" data-page="transfer">📦 Transfer</button>
+      <button class="nav" data-page="settings">⚙️ Settings</button>
+      <div class="sidefoot">Mamad Craft Launcher<br><small>v1.0.0 • Ready</small></div>
+    </aside>
+    <main>
+      <header>
+        <div><small class="muted">MINECRAFT LAUNCHER</small><h1 id="title">Dashboard</h1></div>
+        <div class="status"><i></i> Local mode</div>
+      </header>
+      <section id="content"></section>
+    </main>
+  </div>
+  <div id="toast"></div>
+  <script src="app.js"></script>
+</body>
+</html>
