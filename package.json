@@ -1,0 +1,11 @@
+{
+  "name":"mamad-craft-launcher",
+  "version":"1.0.0",
+  "private":true,
+  "description":"Mamad Craft Launcher",
+  "main":"electron/main.js",
+  "scripts":{"start":"electron .","web":"python -m http.server 8080 -d app","dist:win":"electron-builder --win nsis","dist:linux":"electron-builder --linux AppImage","cap:add":"npx cap add android","cap:sync":"npx cap sync android","cap:open":"npx cap open android"},
+  "devDependencies":{"electron":"^38.0.0","electron-builder":"^26.0.0"},
+  "dependencies":{"@capacitor/android":"^7.4.0","@capacitor/core":"^7.4.0"},
+  "build":{"appId":"com.mamadcraft.launcher","productName":"Mamad Craft Launcher","files":["app/**/*","electron/**/*","package.json"],"win":{"target":"nsis","artifactName":"Mamad-Craft-Launcher-${version}-Setup.exe"},"linux":{"target":"AppImage"}}
+}
